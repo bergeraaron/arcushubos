@@ -24,7 +24,7 @@ S = "${WORKDIR}"
 
 DEPENDS = "zip-native"
 
-OPENJDK_VERSION = "8u265-b01-0+deb9u1"
+OPENJDK_VERSION = "8u292-b10-0+deb9u1"
 
 libdir_jvm ?= "${libdir}/jvm"
 JDK_HOME = "${libdir_jvm}/java-8-openjdk"
@@ -37,13 +37,13 @@ OPENJDK_DEBIAN_URL = "http://security.debian.org/debian-security/pool/updates/ma
 
 JDK_FILE = "openjdk-8-jdk-headless_${OPENJDK_VERSION}_armhf.deb"
 JDK_URI = "${OPENJDK_DEBIAN_URL}/${JDK_FILE};name=jdk;unpack=false"
-SRC_URI[jdk.md5sum] = "f9cea25fda23732708516be1f8b78946"
-SRC_URI[jdk.sha256sum] = "987cbcebc7b7e202031a9ccf80948243dec197aa6bf2aa8834fad9de89b08b78"
+SRC_URI[jdk.md5sum] = "d32596f110acbeffd082059f7f1d8ee5"
+SRC_URI[jdk.sha256sum] = "b186c35d56000cbecdc354d3d1989d28225873092b7f97e169c131ba89843636"
 
 JRE_FILE = "openjdk-8-jre-headless_${OPENJDK_VERSION}_armhf.deb"
 JRE_URI = "${OPENJDK_DEBIAN_URL}/${JRE_FILE};name=jre;unpack=false"
-SRC_URI[jre.md5sum] = "0cfb7e0611002fb312e011daca8acb55"
-SRC_URI[jre.sha256sum] = "5cec879b5fc181a8dbf14a175af7808e393a3f06b0fb02005d7aad1cc5f32748"
+SRC_URI[jre.md5sum] = "9e811345b9a69438c8b952a08fe0d7d3"
+SRC_URI[jre.sha256sum] = "b6ddfce2d8207a237910247dec92e17acf138e0186dc55ce60174b474863c5aa"
 
 # Files we override
 SRC_URI = " \
